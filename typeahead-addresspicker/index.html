@@ -7,10 +7,11 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://rawgithub.com/sgruhier/typeahead-addresspicker/master/demo/styles.css">
 </head>
 
 <body>
+<a href="https://github.com/sgruhier/typeahead-addresspicker"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://github-camo.global.ssl.fastly.net/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png"></a>
     <div id="main">
       <h1> Typeahead address picker</h1>
       <p>
@@ -22,7 +23,9 @@
       <div style="clear:both"></div>
       <h2>Explanations</h2>
       <p>
-      The latest version of typeahead uses a class <code>Bloodhound</code> as source of autocomplete data. I just create my own class, derivated from <code>Bloodhound</code>
+      The latest version of typeahead uses a class <code>Bloodhound</code> as autocomplete data source. I just created my own class, derivated from <code>Bloodhound</code> to get suggestions from google map AutocompleteService.
+      <br/>
+      And I use PlacesService to retreive lat/lng or bounds of the suggested address.
       The code is pretty straight forward
       <script type="text/javascript" src="https://gist.github.com/sgruhier/9273580.js"></script>
       </p>
@@ -30,11 +33,11 @@
     </div>
   </div>
 
- <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
- <script src="../dist/typeahead.js"></script>
- <script src="../dist/handlebars.js"></script>
- <script src="../dist/typeahead-addresspicker.js"></script>
+ <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ <script src="https://rawgithub.com/sgruhier/typeahead-addresspicker/master/dist/typeahead.js"></script>
+ <script src="https://rawgithub.com/sgruhier/typeahead-addresspicker/master/dist/handlebars.js"></script>
+ <script src="https://rawgithub.com/sgruhier/typeahead-addresspicker/master/dist/typeahead-addresspicker.js"></script>
  <script>
   $( function() {
     // instantiate the addressPicker suggestion engine (based on bloodhound)
