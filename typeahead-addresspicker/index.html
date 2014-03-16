@@ -34,9 +34,8 @@
   </div>
 
  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
  <script src="https://rawgithub.com/sgruhier/typeahead-addresspicker/master/dist/typeahead.js"></script>
- <script src="https://rawgithub.com/sgruhier/typeahead-addresspicker/master/dist/handlebars.js"></script>
  <script src="https://rawgithub.com/sgruhier/typeahead-addresspicker/master/dist/typeahead-addresspicker.js"></script>
  <script>
   $( function() {
@@ -46,11 +45,6 @@
     // instantiate the typeahead UI
     $('#address').typeahead(null, {
       displayKey: 'description',
-      templates: {
-        suggestion: Handlebars.compile(
-          '<p>{{description}}</p>'
-        )
-      },
       source: addressPicker.ttAdapter()
     });
 
